@@ -15,4 +15,11 @@
   </p>
 
   <button ion-button secondary menuToggle>Toggle Menu</button>
+
+  <ion-list>
+    <ion-item *ngFor="let stop of stops">
+      <h2>{{ stop.address }}</h2>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
